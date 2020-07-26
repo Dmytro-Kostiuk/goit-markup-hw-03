@@ -333,7 +333,7 @@ h4 {
 
 .item-portfolio {
   display: flex;
-  width: calc((100% - 60px) / 3.4);
+  width: calc((100% - 60px) / 3);
   margin-right: 30px;
   border: solid 1px #eeeeee;
   margin-bottom: 30px;
