@@ -14,8 +14,51 @@ body {
   color: var(--general-color);
 }
 
+.container {
+  width: 1200;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page-header {
+  padding: 24px 0 25px 0;
+}
+
+.navigation {
+  display: flex;
+
+  align-items: center;
+  margin-right: auto;
+}
+
+.logo {
+  margin-right: 80px;
+}
+
+.menu-list {
+  display: flex;
+}
+
+.list-item {
+  margin-right: 50px;
+}
+
+.list-item:last-child {
+  margin-right: 0;
 }
 
 .link-item,
@@ -39,6 +82,10 @@ body {
   color: var(--general-color);
 }
 
+.contacts:not(:last-child) {
+  margin-right: 30px;
+}
+
 .page-title {
   font-weight: 900;
   font-size: 44px;
@@ -49,17 +96,31 @@ body {
 
   color: var(--white-color);
 }
-.port-title {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--dark-color);
-  text-decoration: none;
-}
 
 .hero {
   background: rgba(47, 48, 58, 0.8);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.btn-menu {
+  display: flex;
+  justify-content: center;
+}
+.btn-item {
+  padding-top: 93px;
+  padding-bottom: 50px;
+  margin-right: 30px;
+}
+
+.btn:last-child {
+  margin-right: 0;
 }
 
 .btn {
@@ -79,16 +140,73 @@ body {
   border-radius: 4px;
 }
 
+.size-btn {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
 .link-btn {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  display: flex;
-  align-items: center;
+
   text-align: center;
+
   letter-spacing: 0.06em;
   text-decoration: none;
   color: var(--white-color);
+  padding: 10px 32px;
+  border-radius: 4px;
+  background: var(--hover-color);
+}
+
+.list-work {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-padding {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.pad {
+  padding-top: 94px;
+  /* padding-bottom: 94px;*/
+}
+
+.desc-of-work-item {
+  /*flex-direction: column;*/
+  width: calc((100% - 90px) / 4);
+}
+
+.desc-of-work-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.list-what-we-do {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+}
+.list-what-we-do:nth-child(3n) {
+  margin: 0;
+}
+
+.list-what-we-do > a {
+  width: 370px;
+}
+
+.port-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--dark-color);
+  text-decoration: none;
+  padding-left: 24px;
+  padding-top: 20px;
 }
 
 .p-description {
@@ -110,9 +228,22 @@ body {
   letter-spacing: 0.03em;
 
   color: var(--dark-color);
+  margin-bottom: 50px;
 }
 .item-team-list {
   background: var(--white-color);
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+}
+
+.item-team-list:nth-child(4n) {
+  margin-right: 0;
+}
+.item-team-list > p {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .icon-title,
@@ -133,9 +264,10 @@ body {
 
 .img-title {
   text-align: center;
-
   background: rgba(47, 48, 58, 0.8);
   color: var(--white-color);
+  padding-top: 27px;
+  padding-bottom: 27px;
 }
 
 .title-h3,
@@ -149,8 +281,11 @@ body {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
-
+  padding-left: 24px;
   color: var(--general-color);
+  padding-top: 4px;
+  margin: 0;
+  padding-bottom: 20px;
 }
 
 .title-h3 {
@@ -158,8 +293,24 @@ body {
   font-weight: 500;
 }
 
+.foot-nav {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-right: 69px;
+}
+
 .foot-color {
   background: #2f303a;
+}
+
+.logo-foot {
+  margin-top: 20px;
+}
+.address-item {
+  margin-bottom: 9px;
+}
+.address-item:last-child {
+  margin-bottom: 0;
 }
 
 .contact-color {
@@ -175,4 +326,23 @@ body {
 
 .join {
   color: var(--white-color);
+}
+
+.item-portfolio {
+  display: flex;
+  width: calc((100% - 60px) / 3.4);
+  margin-right: 30px;
+  border: solid 1px #eeeeee;
+  margin-bottom: 30px;
+}
+
+.item-portfolio > a {
+  margin: 0;
+  padding: 0;
+}
+.item-portfolio:nth-child(3n) {
+  margin-right: 0;
+}
+.item-portfolio:nth-child(n + 7) {
+  margin-bottom: 94px;
 }
