@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-  width: 1200;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -187,7 +187,7 @@ h4 {
 }
 
 .list-what-we-do {
-  width: calc((100% - 60px) / 3);
+  width: calc((100% - 60px) / 3.075);
   margin-right: 30px;
 }
 .list-what-we-do:nth-child(3n) {
@@ -232,7 +232,7 @@ h4 {
 }
 .item-team-list {
   background: var(--white-color);
-  width: calc((100% - 90px) / 4);
+  width: calc((100% - 90px) / 4.1);
   margin-right: 30px;
 }
 
