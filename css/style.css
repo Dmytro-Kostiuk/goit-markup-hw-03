@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -187,15 +187,11 @@ h4 {
 }
 
 .list-what-we-do {
-  width: calc((100% - 60px) / 3.075);
+  width: calc((100% - 60px) / 3);
   margin-right: 30px;
 }
 .list-what-we-do:nth-child(3n) {
   margin: 0;
-}
-
-.list-what-we-do > a {
-  width: 370px;
 }
 
 .port-title {
@@ -232,7 +228,7 @@ h4 {
 }
 .item-team-list {
   background: var(--white-color);
-  width: calc((100% - 90px) / 4.1);
+  width: calc((100% - 90px) / 4);
   margin-right: 30px;
 }
 
@@ -333,7 +329,7 @@ h4 {
 
 .item-portfolio {
   display: flex;
-  width: calc((100% - 60px) / 3.1);
+  width: calc((100% - 60px - 6px) / 3);
   margin-right: 30px;
   border: solid 1px #eeeeee;
   margin-bottom: 30px;
